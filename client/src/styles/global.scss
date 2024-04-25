@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'vendor/normalize.css';
+@import 'reset';
+@import 'common/popups.scss';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    // font-family: 'Exo 2';
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.56px;
+    background-color: #F0F2F5;
+}
+
+#__next {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.container {
+    max-width: 1116px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+button {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.section {
+    margin-bottom: 120px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+}
+
+.btn {
+    padding: 8px 15px;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wrapper {
+    padding: 20px 0 120px;
+}
+
+.title {}
+
+
+.popup-overlay {
+    display: block;
+    overflow-y: visible;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.center-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}

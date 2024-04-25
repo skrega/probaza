@@ -1,0 +1,10 @@
+.inner{
+    background-color: #fff;
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.row:not(:last-child){
+    margin-bottom: 20px;
+}

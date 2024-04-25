@@ -1,0 +1,24 @@
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.btn__menu {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+}
+
+@media(max-width: 767px) {
+    .logo {
+        width: 110px;
+        height: 40px;
+    }
+}

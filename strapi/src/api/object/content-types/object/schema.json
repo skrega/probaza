@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objects",
+  "info": {
+    "singularName": "object",
+    "pluralName": "objects",
+    "displayName": "object",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "square": {
+      "type": "float"
+    },
+    "floor": {
+      "type": "integer"
+    },
+    "entireFloor": {
+      "type": "integer"
+    },
+    "priceSQM": {
+      "type": "decimal"
+    },
+    "site": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ownerContacts": {
+      "displayName": "ownerContacts",
+      "type": "component",
+      "repeatable": true,
+      "component": "owner-contacts.owner-contacts"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

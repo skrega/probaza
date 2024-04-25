@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_owner_contacts_owner_contacts",
+  "info": {
+    "displayName": "ownerContacts"
+  },
+  "options": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "comments": {
+      "type": "text"
+    }
+  }
+}
